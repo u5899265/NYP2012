@@ -47,18 +47,33 @@ An application that made use of human expert reasoning and decision-making devel
 ### Methodology
 Research of cardio vascular diseases and consultation with Doctor Li Zhiqiang, the questionnaire focused on 8 kinds of basic cardio vascular diseases. Symptoms of the different kinds of diseases could also be found on many websites. Information found was classified and divided by the type of heart diseases into different groups. Rule and prompt of the expert system was developed with the use from the website, http://www.expertise2go.com/ and the expert system was built up from the knowledge gathered. 
 
+
+![图片1](https://user-images.githubusercontent.com/44157061/69030153-dbc13d00-0a2a-11ea-83da-5446320680d1.png)
+
 **Picture 1: Application sample 1**
 
 
+![图片2](https://user-images.githubusercontent.com/44157061/69030159-dd8b0080-0a2a-11ea-876c-653240ca7d2f.png)
+
 **Picture 2: Application sample 2**
+
+
+![图片3](https://user-images.githubusercontent.com/44157061/69030165-e085f100-0a2a-11ea-93ac-f96ceed4c9a4.png)
 
 **Picture 3: Application sample 3**
 
 
+![图片4](https://user-images.githubusercontent.com/44157061/69030166-e11e8780-0a2a-11ea-81ff-76511942f73f.png)
+
 **Picture 4: Application sample 4**
 
 
+![图片5](https://user-images.githubusercontent.com/44157061/69030168-e11e8780-0a2a-11ea-8c89-a6156a82713d.png)
+
 **Picture 5: Application sample 5**
+
+
+![图片6](https://user-images.githubusercontent.com/44157061/69030169-e11e8780-0a2a-11ea-836f-d850ae3e925c.png)
 
 **Picture 6: Application sample 6**
 
