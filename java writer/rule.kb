@@ -1,0 +1,89 @@
+RULE [is the heart disease congenital heart diseases?] 
+If [hereditary diseases] = "yes"
+Then [heart diseases] = "have congenital heart disease, see a doctor"
+
+RULE [is the heart disease heart angina?]
+If [hereditary diseases] = "no" and 
+[show1] = "yes, 3 to 5 minutes"
+Then [heart diseases] = "heart angina, need to rest and taking nitroglycerin"
+
+RULE [is the heart disease myocardial infarction?]
+If [hereditary diseases] = "no" and 
+[show1] = "yes, more than 30 minutes"
+Then [heart diseases] = "myocardial infarction, need to see a doctor at once"
+
+RULE [is the heart disease pulmonary hypertension leading to right ventricular hypertrophy?]
+If [hereditary diseases] = "no" and 
+[show1] = "no" and 
+[shortness of breath] = "no but have cyanosis, obvious jugular vein filling, right upper quadrant pain, lower extremity edema and oliguria"
+Then [heart diseases] = "pulmonary hypertension leading to right ventricular hypertrophy, control weight, no high cholesteric food"
+
+RULE [is the heart disease pulmonary heart disease?]
+If [shortness of breath] = "yes" and 
+[hemoptysis] = "no" and
+[show2] = "yes"
+Then [heart diseases] = "pulmonary heart disease, not smoking and drinking, keep the air fresh, drink lots of water"
+
+RULE [is the heart disease viral myocarditis?]
+If [shortness of breath] = "yes" and 
+[hemoptysis] = "no" and 
+[show2] = "no" and 
+[show3] = "yes"
+Then [heart diseases] = "viral myocarditis"
+
+RULE [is the heart disease rheumatic heart disease?]
+If [shortness of breath] = "yes" and
+[hemoptysis] = "yes" and 
+[show4] = "yes"
+Then [heart diseases] = "rheumatic heart disease, less sodium rich food, do not eat pepper and ginger"
+
+RULE [is the heart disease  arterial hypertension leading to left ventricular hypertrophy?]
+If [shortness of breath] = "yes" and 
+[hemoptysis] = "yes" and
+[show4] = "no" and 
+[show5] = "yes"
+Then [heart diseases] = "arterial hypertension leading to left ventricular hypertrophy, keep warming and less sodium rich food, eat lots of fresh vegetables and fruits"
+
+PROMPT [hereditary diseases] Choice CF
+"Do you have hereditary diseases:"
+"yes"
+"no"
+
+PROMPT [show1] Choice CF
+"Do you got pressure behind the breastbone, feel dizzy and anxious:"
+"no"
+"yes, 3 to 5 minutes"
+"yes, more than 30 minutes"
+
+PROMPT [shortness of breath] Choice CF
+"Do you feel shortness of breath:"
+"no but have cyanosis, obvious jugular vein filling, right upper quadrant pain, lower extremity edema and oliguria"
+"yes"
+
+PROMPT [hemoptysis] Choice CF
+"Do you have hemoptysis:"
+"yes"
+"no"
+
+PROMPT [show2] Choice CF
+"Do you have chronic cough, sputum, emphysema, cyanosis, fatigue, lower extremity edema slightly:"
+"yes"
+"no"
+
+PROMPT [show3] Choice CF
+"Do you feel fever, palpitations and dizziness:"
+"yes"
+"no"
+
+PROMPT [show4] Choice CF
+"Do you have migratory arthritis, rash and acute tonsillitis:"
+"yes"
+"no"
+
+PROMPT [show5] Choice CF
+"Do you have fatigue, palpitations and feel shortness of breath when supine, become better after sit up:"
+"yes"
+"no"
+
+GOAL [heart diseases]
+
